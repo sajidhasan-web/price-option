@@ -36,14 +36,14 @@ const NavBar = () => {
         }
       ];
     return (
-        <nav>
+        <nav className="mx-10 mt-10">
             <div className="md:hidden" onClick={() => setOpen(!open)}>
                 {
-                    open === true ?  <IoMdMenu className="text-3xl"/> : <RxCross1 className="text-3xl"/>
+                    open === true ? <RxCross1 className="text-3xl"/> : <IoMdMenu className="text-3xl"/>
                 }
             </div>
 
-           <ul className={`md:flex ${open ? '-top-60' : 'top-8'  } absolute md:static duration-500 bg-blue-500 p-5`}>
+           <ul className={`md:flex justify-center ${open ? 'top-8' : '-top-60'  } absolute md:static duration-500 bg-blue-500 p-5`}>
 
                 {
                 
